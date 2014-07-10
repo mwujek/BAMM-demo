@@ -1,0 +1,8 @@
+
+@font-face {
+	font-family: 'billy';
+	src: url('billy.eot?') format('eot'), 
+	     url('billy.woff') format('woff'), 
+	     url('billy.ttf')  format('truetype'),
+	     url('billy.svg#billy') format('svg');
+}

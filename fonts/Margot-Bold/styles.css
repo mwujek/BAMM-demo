@@ -1,0 +1,8 @@
+
+@font-face {
+	font-family: 'Margot-Bold';
+	src: url('Margot-Bold.eot?') format('eot'), 
+	     url('Margot-Bold.woff') format('woff'), 
+	     url('Margot-Bold.ttf')  format('truetype'),
+	     url('Margot-Bold.svg#Margot-Bold') format('svg');
+}
