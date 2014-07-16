@@ -11,9 +11,16 @@
 	
 	var interval = undefined;
 	$(document).ready(function () {
-    interval = setInterval(getNext, 2000); // milliseconds
+    interval = setInterval(getNext, 1000); // milliseconds
     $('#next').on('click', getNext);
     $('#prev').on('click', getPrev);
+
+    $('body').keyup(function (e){
+
+  if (e.keyCode == 37) {
+     getPrev();
+   }
+})
 });
 
 	function getNext() {

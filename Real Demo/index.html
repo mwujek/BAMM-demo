@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>BAMM.tv B2B</title>
+	<meta name="author" content="BAMM.tv" />
+	<meta name="description" content="B2B Draft Website for BAMM.tv" />
+	<meta name="keywords"  content="music,tv,production,programming,bay area, mixing, mastering" />
+	<!-- <meta name="Resource-type" content="Document" /> -->
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+		<![endif]-->
+
+
+		<!-- Load JQuery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+		<!-- Load Fullpage -->
+		<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+		<!-- Load Typekit -->
+		<script type="text/javascript" src="//use.typekit.net/scz5ube.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+		<!-- Load Video Scripts -->
+
+	<!--<script type="text/javascript" src="bower_components/imagesloaded/imagesloaded.js"></script>
+
+	<script type="text/javascript" src="bower_components/video.js/dist/video-js/video.js"></script>-->
+
+	<script type="text/javascript" src="js/jquery.tubular.1.0.js"></script>
+
+
+	<!-- This script initiates the fullPage.js plugin -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				css3: true,
+				navigation: true,
+				navigationPosition: 'right',
+				anchors:['firstSlide', 'secondSlide', 'thirdSlide', 'fourthSlide'],
+
+			});
+		});
+	</script>
+
+	
+
+	<!-- Video Scripts -->
+
+	<script type="text/javascript">
+
+		$('document').ready(function() {
+			var options = {videoId: '2U8hDqaYg8s'};
+			$('#fullpage').tubular(options);
+
+		});
+
+		//https://github.com/georgepaterson/jquery-videobackground#readme
+
+
+
+	</script>
+
+
+</head>
+<body>
+
+
+
+
+
+	<div id="fullpage">
+
+		<div class="section" id="section0">
+			<h1>BAMM.tv</h1>
+			<p>The Best New Music to Amplify your Brand</p>
+
+		</div>
+
+		<div class="section" id="section1">
+			<div class="intro">
+				<h1>Your Television Studio in the Cloud</h1>
+				<p>Everybody loves music - but the thought of licensing it for your platform may evoke emotions of fear and loathing rather than enjoyment. BAMM.tv exists to change the way companies think about music licensing by offering affordable music solutions that connect deeply with your customers and provide exciting, relevant content tailored to their interests.</p>
+
+				<p><em>Think of us as your customized television studio in the cloud.</em></p>
+			</p>
+		</div>
+	</div>
+
+
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>New Challenges</h1>
+			<h1>New Opportunities</h1>
+			<p>Get it right the first time.</p>
+			<a href="#fourthSlide"><div class="next-button"></div></a>
+		</div>
+	</div>
+
+	<div class="section" id="section3">
+		<div class="intro">
+			<h1>Music Licensing is hard;</h1>
+			<h1 class="last-line">BAMM.tv makes it easy.</h1>
+			<p>Bearing the weight of legal compliance and contractual restrictions is a difficult task. At best, licensing music from mainstream source is a costly and time consuming process, and at the end of the line there is little in any one library to differentiate you from your competitors. Or YouTube.</p>
+			<p>BAMM.tv helps partners move the “music” category from a cost driver to a profit center with innovative strategies that deliver localized, customized. exclusive cogent for your customers. From first concept to final execution, we seamlessly integrate our deliverables to amplify your existing marketing and business development efforts.</p>
+			
+		</div>
+	</div>
+</div>
+
+
+<!-- Smooth Scrolling -->
+
+<script type="text/javascript">
+
+
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+                || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+               $('html,body').animate({
+                   scrollTop: target.offset().top
+               }, 1000);
+               return false;
+           }
+       }
+   });
+
+    </script>
+
+
+</body>
+</html>
