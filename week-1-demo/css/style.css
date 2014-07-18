@@ -26,6 +26,66 @@ p{
 .section{
 	text-align:center;
 }
+/*******************   Navigation  *****************/
+
+/*JS Classes*/
+
+.moveOut{
+  left:-30px !important;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+nav{
+  list-style: none;
+  /*outline: red 1px dashed;*/
+  position: fixed;
+  z-index: 100;
+  width: 200px;
+  padding:0;
+  margin: 0;
+  left:-140px;
+  transition:all 0.5s;
+  text-align: right;
+  top:30%;
+  padding:30px 20px;
+  
+  /*outline: yellow 1px solid;*/
+
+}
+
+nav a{
+  color:#848484;
+  text-decoration: none;
+}
+
+
+nav li, nav ul{
+  text-indent: 0;
+  list-style: none;
+  padding:0;
+  margin: 0;
+}
+
+nav li span{
+  margin: 10px 0; 
+  /*outline: 1px black solid;*/
+  display: inline-block;
+  margin-left: 55px;
+  transition:0.5s all;
+
+}
+
+nav svg{
+  vertical-align:middle;
+  width:40px;
+  height:40px;
+  /*outline: red 1px solid;*/
+}
+nav li, path, #heart, #inner-bigGear, #inner-smallGear, .cut-icon{
+  transition:0.3s all;
+}
+
+
 /*******************   First Section  *****************/
 #section0 h1{
 	font-size: 15em;
