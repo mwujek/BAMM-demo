@@ -7,146 +7,149 @@ body{
 	height:100%;
 	font-size:1rem; /*IE9 & 10*/
 	line-height:1.625; /*IE9 & 10*/
-	font:1rem/1.625 sans-serif; }
+	font:1rem/1.625 sans-serif;
+}
 
-	h1{
-		font-size:2.9375rem;
-	}
-	h2{
-		font-size:1.8125rem;
-	}
-	h3{
-		font-size:1.4375rem;
-	}
+h1{
+	font-size:2.9375rem;
+}
+h2{
+	font-size:1.8125rem;
+}
+h3{
+	font-size:1.4375rem;
+}
 
 
-	#media-test{
-		position: fixed;
-		top:0;
-		left:0;
-		z-index: 100;
-		background:rgba(255,100,0,0.8);
-		width:100%;
-		line-height: 5em;
-		color:#fff;
-		height:5em;
-		font-family: sans-serif;
-		letter-spacing: 1px;
-		font-weight: 100;
-		text-align: center;	
-		display: block;
-	}
-	nav a{
-		text-decoration: none;
-		color:white;
-		/*color:orange;*/
-	}
+#media-test{
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: 100;
+	background:rgba(255,100,0,0.8);
+	width:100%;
+	line-height: 5em;
+	color:#fff;
+	height:5em;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	font-weight: 100;
+	text-align: center;	
+	display: block;
+}
 
-	nav a:visited{
-		color:white;
-	}
+nav a{
+	text-decoration: none;
+	color:white;
+	/*color:orange;*/
+}
 
-	#title{
-		text-align: center;
-		background-color: #333;
-		padding: 0;
-		margin: 0;
-		width:100%;
-		height:50px;
-		line-height: 50px;
-		font-family: "refrigerator-deluxe",sans-serif;
-		color:#fff;
-		font-size: 2rem;
-		letter-spacing: 3px;
-		/*margin-bottom: 25px;*/
-	}
-		nav{
-			list-style: none;
-			/*outline: red 1px dashed;*/
-			position: fixed;
-			z-index: 100;
-			width: 200px;
-			padding:0;
-			margin: 0;
-			left:-200px;
-			transition:all 0.5s;
-			text-align: center;
-			top:0;
-			background:#555;
-			height:100%;
-			font-family: 'chaparral-pro';
-			/*outline: yellow 1px solid;*/
-		}
+nav a:visited{
+	color:white;
+}
+
+#title{
+	text-align: center;
+	background-color: rgba(0,0,0,0.8);
+	padding: 0;
+	margin: 0;
+	width:100%;
+	height:50px;
+	line-height: 50px;
+	font-family: "refrigerator-deluxe",sans-serif;
+	color:#fff;
+	font-size: 2rem;
+	letter-spacing: 3px;
+	border-bottom: 2px solid #444;
+	/*margin-bottom: 25px;*/
+}
+nav{
+	list-style: none;
+	/*outline: red 1px dashed;*/
+	position: fixed;
+	z-index: 100;
+	width: 200px;
+	padding:0;
+	margin: 0;
+	left:-200px;
+	transition:all 0.5s;
+	text-align: center;
+	top:0;
+	background:rgba(20,20,20,0.75);;
+	height:100%;
+	font-family: 'chaparral-pro';
+	border-right: 2px solid #555;
+	/*outline: yellow 1px solid;*/
+}
 
 #menu-svg{
 	height:25px;
 	width: 25px;
 }
-		#nav-button{
-  width:55px;
-  height:40px;
-  position:absolute;
-  top:20px;
-  right:-70px;
-  /* background:#ddd; */
-  text-align:center;
-  line-height:40px;
-  transition:all 0.3s;
-  text-decoration:underline;
-  color:black;
-  border: white 1px solid;
-  border-radius:30px;
-  font-size:16px;
+#nav-button{
+	width:55px;
+	height:40px;
+	position:absolute;
+	top:20px;
+	right:-70px;
+	/* background:#ddd; */
+	text-align:center;
+	line-height:40px;
+	transition:all 0.3s;
+	text-decoration:underline;
+	color:white;
+	border-radius:30px;
+	font-size:16px;
 }
 
 
 .navOut{
-  left:0px;
+	left:0px;
 }
 
 .activeButton{
-  border:#ff4136 1px solid !important;
-  color:#fff !important;
-  background-color:#ff4136;
-  width:70px !important;
-  height:50px !important;
-  right:-50px !important;
-  line-height:50px !important;
-  /* right:-60px !important; */
+	border:#ff4136 1px solid !important;
+	color:#fff !important;
+	background-color:#ff4136;
+	width:70px !important;
+	height:50px !important;
+	right:-50px !important;
+	line-height:50px !important;
+	/* right:-60px !important; */
 }
 
 
 
 
-		nav li, nav ul{
-			text-indent: 0;
-			list-style: none;
-			padding:0;
-			margin: 0;
-		}
-		nav li{
-			margin: 10px auto;
-			
-			border-bottom: 1px #666 solid;
-			display: block;
-		}
+nav li, nav ul{
+	text-indent: 0;
+	list-style: none;
+	padding:0;
+	margin: 0;
+}
+nav li{
+	margin: 10px auto;
 
-		nav li .svgContainers{
-			/*outline: 1px black solid;*/
-			display: inline-block;
-			transition:0.5s all;
-			margin-bottom: 12px;
-		}
+	border-bottom: 1px #333 solid;
+	display: block;
+}
 
-		nav svg{
-			vertical-align:middle;
-			width:25px;
-			height:25px;
-			/*outline: red 1px solid;*/
-		}
-		nav li, path, #heart, #inner-bigGear, #inner-smallGear, .cut-icon{
-			transition:0.3s all;
-		}
+nav li .svgContainers{
+	/*outline: 1px black solid;*/
+	display: inline-block;
+	transition:0.5s all;
+	margin-bottom: 12px;
+}
+
+nav svg{
+	vertical-align:middle;
+	width:25px;
+	height:25px;
+	/*outline: red 1px solid;*/
+}
+nav li, path, #heart, #inner-bigGear, #inner-smallGear, .cut-icon{
+	transition:0.3s all;
+}
 
 .listText{
 	display: block;
@@ -155,72 +158,167 @@ body{
 
 }
 
-		.section{
-			text-align:center;
-			transition:1.0s all;
-			background: #fff;
-			opacity:0;
-			padding:0px 8px;
-		} 
+.section{
+	transition:1.0s all;
+}
 
-		.section h1{
-			font-family: "refrigerator-deluxe",sans-serif;
-			font-size:2.375rem;
-			line-height: 2rem;
-		}
+.section p{
+	text-align:center;
+	transition:1.0s all;
+	margin:0px 8px;
+} 
 
-		#section0 h1{
-			font-size: 6.5rem;
-			margin-bottom: 30px;
-		}
+.section h1{
+	text-align: center;
+}
 
-		#section0 p{
-			font-size: 2.2rem;
-			line-height: 2.6rem;
-		}
+.section h1{
+	font-family: "refrigerator-deluxe",sans-serif;
+	font-size:2.375rem;
+	line-height: 2rem;
+}
 
-		#section1.active{
-			background: #3d9970;
-		}
-		#section2.active{
-			background: #39cccc;
-		}
-		#section3.active{
-			background: #ff851b;
-		}
-		.section p{
-			font-family: 'chaparral-pro';
-		}
+#section0 h1{
+	font-size: 6.5rem;
+	margin-bottom: 30px;
+}
 
-		.section.active{
-			opacity: 1;
-		}
+#section0 p{
+	font-size: 2.2rem;
+	line-height: 2.6rem;
+}
 
+#section1.active{
+	background: #333;
+	color:#fffs;
+}
+/*#section2.active{
+background: #39cccc;
+}*/
+#section3.active{
+	background: #ff851b;
+}
 
+#section1{
+	color:#fff;
+}
 
-
-
-	.active span path{
-		fill:#ff851b;
-		color:#ff851b;
-	}
-	nav .active{
-		color:#ff851b !important;
-	}
-
-	/*.menuLiColor{
-		color:#ffcc00 !important;*/
-	}
+.section p{
+	font-family: 'chaparral-pro';
+}
+.slide{
+	width:100%;
+	text-align: center;
+	color:#fff;
+}
 
 
+/*#testz{
+	outline: red 1px solid;
+	height: 80%;
+	overflow:auto;
+}*/
 
-	.removeNav{
-		opacity:0 !important;
-		background:none !important; 
-	}
+.fp-controlArrow{
+	border-width:18.5px 0px 18.5px 24px !important;
+	opacity: 0.7;
+}
+.fp-controlArrow.fp-prev{
+	border-width:18.5px 24px 18.5px 0px !important;
+}
 
 
-	/*BEGIN TABLET OR LARGER*/
+
+
+.active span path{
+	fill:#ff851b;
+	color:#ff851b;
+}
+nav .active{
+	color:#ff851b !important;
+}
+
+/*.menuLiColor{
+	color:#ffcc00 !important;*/
+}
+
+
+
+.removeNav{
+	opacity:0 !important;
+	background:none !important; 
+}
+
+
+
+#blackOut{
+	height: 100%;
+	width:100%;
+	background-color:black;
+	z-index: 99;
+	position: fixed !important;
+	top:0;
+	left:0;
+	opacity: 0.6;
+	display: none;
+}
+
+/*VIDEO*/
+#videoContainer{
+	position:fixed;
+	width:100%;
+	height:100%;
+	display: block;
+}
+
+#bg-video{
+	position:fixed;
+	top:0;
+	z-index:1;
+	left:0;
+}
+
+.background{
+	background:url(../imgs/header0.jpg);
+	background-size: cover;
+}
+
+/*******************   First Section  *****************/
+#section0{
+	color:#fff;
+}
+
+/*******************   Third Section  *****************/
+#section2{
+	background:url(../imgs/header1.jpg);
+	background-size: cover;
+	color:#fff;
+}
+
+#section2 h1{
+	line-height: 1.8rem;
+	font-size: 4rem;
+}
+
+#section2 p{
+	font-size: 1.8rem;
+} 
+
+#section2 .fp-tableCell{
+	background:url(../imgs/watercolor2.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	width:100%;
+	height: 100%;
+	top:0;
+	z-index: 1 !important;
+}
+
+
+
+
+
+/*BEGIN TABLET OR LARGER*/
 @media (min-width:60rem){
 
 	html{
@@ -233,199 +331,199 @@ body{
 @media (min-width:50em){      :root{ font-size:112.5% } }
 @media (min-width:62.4375em){ :root{ font-size:118.75% } 
 
-		#media-test{
-			display: none;
-		}
+#media-test{
+	display: none;
+}
 
-		h1{
-			font-size: 6em;
-		}
-		p{
-			font-size: 2em;
-		}
+h1{
+	font-size: 6em;
+}
+p{
+	font-size: 2em;
+}
 
-		.intro p{
-			max-width: 1000px;
-			margin: 0 auto;
-			font-size: 1.5em;
-		}
-		.section{
-			text-align:center;
-		}
-		/*******************   Navigation  *****************/
+.intro p{
+	max-width: 1000px;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+.section{
+	text-align:center;
+}
+/*******************   Navigation  *****************/
 
-		/*JS Classes*/
-		.moveOut{
-			left:-30px !important;
-			/*background: rgba(0, 0, 0, 0.2);*/
-		}
+/*JS Classes*/
+.moveOut{
+	left:-30px !important;
+	/*background: rgba(0, 0, 0, 0.2);*/
+}
 
-		nav{
-			list-style: none;
-			/*outline: red 1px dashed;*/
-			position: fixed;
-			z-index: 100;
-			width: 200px;
-			padding:0;
-			margin: 0;
-			left:-140px;
-			transition:all 0.5s;
-			text-align: right;
-			top:30%;
-			padding:30px 20px; 
-			/*outline: yellow 1px solid;*/
-		}
-
-
-
-
-		nav li, nav ul{
-			text-indent: 0;
-			list-style: none;
-			padding:0;
-			margin: 0;
-		}
-
-		nav li span{
-			margin: 10px 0; 
-			/*outline: 1px black solid;*/
-			display: inline-block;
-			margin-left: 55px;
-			transition:0.5s all;
-		}
-
-		nav svg{
-			vertical-align:middle;
-			width:40px;
-			height:40px;
-			/*outline: red 1px solid;*/
-		}
-		nav li, path, #heart, #inner-bigGear, #inner-smallGear, .cut-icon{
-			transition:0.3s all;
-		}
-
-
-		/*******************   First Section  *****************/
-		#section0 h1{
-			font-size: 15em;
-			margin: 0 auto;
-			font-family: "refrigerator-deluxe",sans-serif;
-			color:#fff;
-		}
-
-		#section0 p, #section2 p{
-			font-family: "chaparral-pro",serif;
-			font-style: italic;
-			font-weight: 500;
-			margin: -20px auto;
-			color:#fff;
-			font-size: 3em;
-		}
-
-		#section0{
-			background: rgba(0,0,0,0.6);
-		}
-
-		/*******************   Mission Section  *****************/
-
-		#section1{
-			background-image: url(../imgs/pattern-squares.png);
-			background-color: white;
-		}
-		#section1 h1{
-			font-family: "refrigerator-deluxe",sans-serif;
-			font-size:6em;
-			color:#555;
-		}
-
-		#section1 p{
-			font-family: "chaparral-pro",serif;
-			margin: 20px auto;
-
-		}
-
-		/*******************   First Header  *****************/
-		#section2{
-			background-image: url(../imgs/header1.jpg);
-		}
-
-		#section2 h1{
-			font-family: "refrigerator-deluxe",sans-serif;
-			color:#fff;
-			margin: -20px auto;
-		}
-		#section2 p{
-			margin: 40px auto;
-		}
-
-		#section2 .intro{
-			background-image: url(../imgs/strokes.png);
-			background-repeat: no-repeat;
-			background-position: 50% 0%;
-		}
-
-		.next-button{
-			margin: 40px auto;
-			width:40px;
-			height:40px;
-			border-radius: 20px;
-			border:#fff solid 2px;
-			background-image: url(../imgs/arrow-down.png);
-			transition:all 0.3s;
-
-			-webkit-animation: flash 1.5s infinite; /* Safari 4+ */
-			-moz-animation:    flash 1.5s infinite; /* Fx 5+ */
-			-o-animation:      flash 1.5s infinite; /* Opera 12+ */
-			animation:         flash 1.5s infinite; /* IE 10+, Fx 29+ */
-		}
+nav{
+	list-style: none;
+	/*outline: red 1px dashed;*/
+	position: fixed;
+	z-index: 100;
+	width: 200px;
+	padding:0;
+	margin: 0;
+	left:-140px;
+	transition:all 0.5s;
+	text-align: right;
+	top:30%;
+	padding:30px 20px; 
+	/*outline: yellow 1px solid;*/
+}
 
 
 
-		/*ANIMATIONS*/
 
-		@-webkit-keyframes flash {
-			0%   { opacity: 0.5; }
-			50% { opacity: 1; }
-			100% { opacity: 0.5;}
-		}
-		@-moz-keyframes flash {
-			0%   { opacity: 0.5; }
-			50% { opacity: 1; }
-			100% { opacity: 0.5;}
-		}
-		@-o-keyframes flash {
-			0%   { opacity: 0.5; }
-			50% { opacity: 1; }
-			100% { opacity: 0.5;}
-		}
-		@keyframes flash {
-			0%   { opacity: 0.5; }
-			50% { opacity: 1; }
-			100% { opacity: 0.5;}
-		}
+nav li, nav ul{
+	text-indent: 0;
+	list-style: none;
+	padding:0;
+	margin: 0;
+}
+
+nav li span{
+	margin: 10px 0; 
+	/*outline: 1px black solid;*/
+	display: inline-block;
+	margin-left: 55px;
+	transition:0.5s all;
+}
+
+nav svg{
+	vertical-align:middle;
+	width:40px;
+	height:40px;
+	/*outline: red 1px solid;*/
+}
+nav li, path, #heart, #inner-bigGear, #inner-smallGear, .cut-icon{
+	transition:0.3s all;
+}
 
 
-		/*******************   Section3  *****************/
+/*******************   First Section  *****************/
+#section0 h1{
+	font-size: 15em;
+	margin: 0 auto;
+	font-family: "refrigerator-deluxe",sans-serif;
+	color:#fff;
+}
 
-		#section3{
-			background:#111;
-		}
+#section0 p, #section2 p{
+	font-family: "chaparral-pro",serif;
+	font-style: italic;
+	font-weight: 500;
+	margin: -20px auto;
+	color:#fff;
+	font-size: 3em;
+}
 
-		#section3 h1{
-			font-family: "brandon-grotesque",sans-serif;
-			color:#fff;
-			margin: 0 auto;
-		}
+#section0{
+	background: rgba(0,0,0,0.6);
+}
 
-		.last-line{
-			margin-top: -40px !important;
-		}
+/*******************   Mission Section  *****************/
 
-		#section3 p{
-			font-family: "chaparral-pro", serif;
-			font-weight: 100;
-			letter-spacing: 1px;
-			color:#fff;
-			margin: 30px auto;
-		}
-		} /*end the css media query*/
+#section1{
+	background-image: url(../imgs/pattern-squares.png);
+	background-color: white;
+}
+#section1 h1{
+	font-family: "refrigerator-deluxe",sans-serif;
+	font-size:6em;
+	color:#555;
+}
+
+#section1 p{
+	font-family: "chaparral-pro",serif;
+	margin: 20px auto;
+
+}
+
+/*******************   First Header  *****************/
+#section2{
+	background-image: url(../imgs/header1.jpg);
+}
+
+#section2 h1{
+	font-family: "refrigerator-deluxe",sans-serif;
+	color:#fff;
+	margin: -20px auto;
+}
+#section2 p{
+	margin: 40px auto;
+}
+
+#section2 .intro{
+	background-image: url(../imgs/strokes.png);
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+}
+
+.next-button{
+	margin: 40px auto;
+	width:40px;
+	height:40px;
+	border-radius: 20px;
+	border:#fff solid 2px;
+	background-image: url(../imgs/arrow-down.png);
+	transition:all 0.3s;
+
+	-webkit-animation: flash 1.5s infinite; /* Safari 4+ */
+	-moz-animation:    flash 1.5s infinite; /* Fx 5+ */
+	-o-animation:      flash 1.5s infinite; /* Opera 12+ */
+	animation:         flash 1.5s infinite; /* IE 10+, Fx 29+ */
+}
+
+
+
+/*ANIMATIONS*/
+
+@-webkit-keyframes flash {
+	0%   { opacity: 0.5; }
+	50% { opacity: 1; }
+	100% { opacity: 0.5;}
+}
+@-moz-keyframes flash {
+	0%   { opacity: 0.5; }
+	50% { opacity: 1; }
+	100% { opacity: 0.5;}
+}
+@-o-keyframes flash {
+	0%   { opacity: 0.5; }
+	50% { opacity: 1; }
+	100% { opacity: 0.5;}
+}
+@keyframes flash {
+	0%   { opacity: 0.5; }
+	50% { opacity: 1; }
+	100% { opacity: 0.5;}
+}
+
+
+/*******************   Section3  *****************/
+
+#section3{
+	background:#111;
+}
+
+#section3 h1{
+	font-family: "brandon-grotesque",sans-serif;
+	color:#fff;
+	margin: 0 auto;
+}
+
+.last-line{
+	margin-top: -40px !important;
+}
+
+#section3 p{
+	font-family: "chaparral-pro", serif;
+	font-weight: 100;
+	letter-spacing: 1px;
+	color:#fff;
+	margin: 30px auto;
+}
+} /*end the css media query*/

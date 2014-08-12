@@ -1,12 +1,7 @@
 
-
-
-
-
-    $(document).ready(function(){
+$(document).ready(function(){
     var button = $("#nav-button");
     var width = $( window ).width();
-    //var nav = $('nav');
     var menuItems;
     var listItems = $('nav li');
     var lightColor = "#ffffff";
@@ -14,16 +9,17 @@
     var darkColorHover = "#ffcc00";
     var lightColorHover = "#bada55";
     var darkBG;
-
     var menu = $("nav");
     var menuIsOut;
+    var blackOut = $('#blackOut');
+
 // Switch Mobile Menu
 function menuDefault(){
     button.html('Menu');
     button.removeClass('activeButton');
     menu.removeClass('navOut');
     menuIsOut = true;
-    
+    blackOut.fadeOut();
   }
   
   function menuActive(){
@@ -31,21 +27,20 @@ function menuDefault(){
     button.addClass('activeButton');
     menu.addClass('navOut');
     menuIsOut = false;
-    
+    blackOut.fadeIn();
   }
+
+
         
       if(width>600){
       $('#fullpage').fullpage({
         css3: true,
         navigation: false,
         resize: false,
-        anchors:['firstSlide', 'secondSlide', 'thirdSlide', 'fourthSlide', 'fifthSlide'],
+        anchors:['firstSlide', 'secondSlide', 'thirdSlide', 'fourthSlide', 'fifthSlide', 'sixthSlide'],
         menu: '#navMenu',
-
         // autoScrolling: false,
         //navigationPosition: 'right',
-
-
         // This is for chaning the navigation colors
         
         afterLoad: function (anchorLink, index) {
@@ -56,8 +51,6 @@ function menuDefault(){
           darkColorHover = "#bf5f00";
           lightColorHover = "#bf5f00";
           
-          
-
           switch (index) {
             case 1:
             //menu.addClass('removeNav');
@@ -135,12 +128,20 @@ function menuDefault(){
         resize: false,
         anchors:['firstSlide', 'secondSlide', 'thirdSlide', 'fourthSlide', 'fifthSlide'],
         menu: '#navMenu',
-        afterLoad: function (anchorLink, index) {
+        loopHorizontal: false,
+        // slidesNavigation: true,
+        // normalScrollElements: '#testz',
+        // touchSensitivity: 5,
+         // normalScrollElementTouchThreshold: 1,
+        afterLoad: function () {
           // window.alert('damn.');
           menuDefault();
-        }
+        //   if(anchorLink === 'fourthSlide'){
+        //     $.fn.fullpage.setAutoScrolling(false);
+        // }
 
 
+}
 });
 }
 
@@ -151,6 +152,7 @@ function menuDefault(){
     }else{
       menuActive();
     }
+
   });
 
 });

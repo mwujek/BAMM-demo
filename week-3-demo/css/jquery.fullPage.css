@@ -54,12 +54,38 @@ html, body {
 }
 .fp-controlArrow {
     position: absolute;
-    top: 50%;
+    top: 54%;
     cursor: pointer;
     width: 0;
     height: 0;
     border-style: solid;
     margin-top: -38px;
+    -webkit-animation: flash 2s infinite; /* Safari 4+ */
+    -moz-animation:    flash 2s infinite; /* Fx 5+ */
+    -o-animation:      flash 2s infinite; /* Opera 12+ */
+    animation:         flash 2s infinite;
+
+}
+
+@-webkit-keyframes flash {
+  0%   { opacity: 0.5; }
+  50%  { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+@-moz-keyframes flash {
+  0%   { opacity: 0.5; }
+  50%  { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+@-o-keyframes flash {
+  0%   { opacity: 0.5; }
+  50%  { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+@keyframes flash {
+  0%   { opacity: 0.5; }
+  50%  { opacity: 1; }
+  100% { opacity: 0.5; }
 }
 .fp-controlArrow.fp-prev {
     left: 15px;
