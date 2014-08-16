@@ -13,6 +13,7 @@ $(document).ready(function(){
     var menuIsOut;
     var blackOut = $('#blackOut');
 
+
 // Switch Mobile Menu
 function menuDefault(){
     button.html('Menu');
@@ -31,14 +32,15 @@ function menuDefault(){
   }
 
 
-        
+ 
       if(width>600){
       $('#fullpage').fullpage({
         css3: true,
         navigation: false,
         resize: false,
-        anchors:['firstSlide', 'secondSlide', 'thirdSlide', 'fourthSlide', 'fifthSlide', 'sixthSlide'],
+        anchors:['firstSlide', 'secondSlide', 'thirdSlide', 'fourthSlide', 'fifthSlide', 'sixthSlide', 'seventhSlide', 'eightSlide'],
         menu: '#navMenu',
+        scrollOverflow: true,
         // autoScrolling: false,
         //navigationPosition: 'right',
         // This is for chaning the navigation colors
@@ -46,8 +48,8 @@ function menuDefault(){
         afterLoad: function (anchorLink, index) {
           menuItems = $('nav li path');
           listItems = $('nav li');
-          lightColor = "#ffffff";
-          darkColor = "#000000";
+          lightColor = "#ffffff !important";
+          darkColor = "#000000 !important";
           darkColorHover = "#bf5f00";
           lightColorHover = "#bf5f00";
           
@@ -55,24 +57,24 @@ function menuDefault(){
             case 1:
             //menu.addClass('removeNav');
             darkBG = true;
-            menuItems.attr({"fill":lightColor});
-            $('nav li').css("color",lightColor);
+            menuItems.css({"fill":lightColor});
+            listItems.css("color",lightColor);
             
             break;
           case 2: //bright page
           darkBG = false;
-          menuItems.attr({"fill":darkColor});
+          menuItems.css({"fill":darkColor});
           listItems.css("color",darkColor);
           break;
           case 3: //dark page
           darkBG = true;
-          menuItems.attr({"fill":lightColor});
+          menuItems.css({"fill":lightColor});
           listItems.css("color",lightColor);
 
           break;
           case 4: //dark page
           darkBG = true;
-          menuItems.attr({"fill":lightColor});
+          menuItems.css({"fill":lightColor});
           listItems.css("color",lightColor);
           break;
 
@@ -121,14 +123,18 @@ function menuDefault(){
       }
     
     });
-} else{
-  $('#fullpage').fullpage({
+} else if (width <= 2230 && (window.innerHeight < window.innerWidth)) {
+    //fullpage.js object for: mobile and LANDSCAPE
+    window.alert("Please use Landscape!");
+      $('#fullpage').fullpage({
         css3: true,
         navigation: false,
         resize: false,
-        anchors:['firstSlide', 'secondSlide', 'thirdSlide', 'fourthSlide', 'fifthSlide'],
+        anchors:['firstSlide', 'secondSlide', 'thirdSlide', 'fourthSlide', 'fifthSlide', 'sixthSlide', 'seventhSlide', 'eightSlide'],
         menu: '#navMenu',
         loopHorizontal: false,
+        scrollOverflow: true,
+        autoScrolling: false,
         // slidesNavigation: true,
         // normalScrollElements: '#testz',
         // touchSensitivity: 5,
@@ -139,9 +145,36 @@ function menuDefault(){
         //   if(anchorLink === 'fourthSlide'){
         //     $.fn.fullpage.setAutoScrolling(false);
         // }
-
-
 }
+
+
+
+});
+} else { 
+  //fullpage.js object for: mobile and PORTRAIT (prefered layout)
+  $('#fullpage').fullpage({
+        css3: true,
+        navigation: false,
+        resize: false,
+        anchors:['firstSlide', 'secondSlide', 'thirdSlide', 'fourthSlide', 'fifthSlide', 'sixthSlide', 'seventhSlide', 'eightSlide'],
+        menu: '#navMenu',
+        scrollOverflow: true,
+        loopHorizontal: false,
+        // autoScrolling: false,
+        // slidesNavigation: true,
+        // normalScrollElements: '#testz',
+        // touchSensitivity: 5,
+         // normalScrollElementTouchThreshold: 1,
+        afterLoad: function () {
+          // window.alert('damn.');
+          menuDefault();
+        //   if(anchorLink === 'fourthSlide'){
+        //     $.fn.fullpage.setAutoScrolling(false);
+        // }
+}
+
+
+
 });
 }
 
@@ -155,7 +188,10 @@ function menuDefault(){
 
   });
 
-});
+
+
+
+}); //end onLoad() function
 
  
 
