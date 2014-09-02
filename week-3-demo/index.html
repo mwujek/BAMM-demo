@@ -81,13 +81,120 @@
 
 <!-- .................................... n a v i g a t i o n .................................... -->
 
+<div id="nav-button">Menu</div>
+<nav>
+<!-- Menu and Close button on mobile -->
+    <ul id="navMenu">
+    <li id="title">MENU</li>
+ 
+      <li data-menuanchor="nav-1" class="active"><a href="#nav-1"><span class="listText">Home</span>
+        <!-- CUT -->
+        <span class="svgContainers">
+
+        <img class="nav-svg svg" src="imgs/svg/home.svg" alt="nav-icon">
+     
+        </span>
+      </a></li>
+      
+
+      <li data-menuanchor="nav-2"><a href="#nav-2"><span class="listText">Mission</span>
+        <span class="svgContainers">
+          
+          <img class="nav-svg svg" src="imgs/svg/cloud-1.svg" alt="nav-icon">
+          
+          </span>
+        </a></li>
+
+        <li data-menuanchor="nav-3"><a href="#nav-3">
+        <span class="listText">Licensing</span>
+
+        <span class="svgContainers">
+
+        	<img class="nav-svg svg" src="imgs/svg/note.svg" alt="nav-icon">
+          
+        </span>
+
+      </a></li>
+
+
+      <li data-menuanchor="nav-4"><a href="#nav-4"><span class="listText">Music Library</span>
+
+      <span class="svgContainers">
+
+      	<img class="nav-svg svg" src="imgs/svg/cloud-1.svg" alt="nav-icon">
+        
+      </span>
+    </a></li>
+
+    
+    <li data-menuanchor="nav-5"><a href="#nav-5"><span class="listText">Technology</span>
+      <span class="svgContainers">
+      
+       <img class="nav-svg svg" src="imgs/svg/gear.svg" alt="nav-icon">
+      
+     </span></a></li>
+
+      <li data-menuanchor="nav-6"><a href="#nav-6"><span class="listText">New Slide 1</span>
+        <!-- CUT -->
+        <span class="svgContainers">
+
+        <img class="nav-svg svg" src="imgs/svg/home.svg" alt="nav-icon">
+     
+        </span>
+      </a></li>
+      
+
+        <li data-menuanchor="nav-7"><a href="#nav-7">
+        <span class="listText">New Slide 2</span>
+
+        <span class="svgContainers">
+
+        	<img class="nav-svg svg" src="imgs/svg/note.svg" alt="nav-icon">
+          
+        </span>
+
+      </a></li>
+
+
+      <li data-menuanchor="nav-8"><a href="#nav-8"><span class="listText">New Slide 3</span>
+
+      <span class="svgContainers">
+
+      	<img class="nav-svg svg" src="imgs/svg/cloud-1.svg" alt="nav-icon">
+        
+      </span>
+    </a></li>
+
+    <li data-menuanchor="nav-9"><a href="#nav-9">
+        <span class="listText">New Slide 4</span>
+
+        <span class="svgContainers">
+
+        	<img class="nav-svg svg" src="imgs/svg/note.svg" alt="nav-icon">
+          
+        </span>
+
+      </a></li>
+
+
+      <li data-menuanchor="nav-10"><a href="#nav-10"><span class="listText">New Slide 5</span>
+
+      <span class="svgContainers">
+
+      	<img class="nav-svg svg" src="imgs/svg/cloud-1.svg" alt="nav-icon">
+        
+      </span>
+    </a></li>
+ </ul>
+</nav>
+
 
 
 <div id="blackOut"></div>
 
 	<div id="fullpage">
 
-		<div class="section" id="section0">
+		<div class="section" id="section0" data-brightness="dark">
 		<span id="videoContainer"></span>
 			<h1>BAMM.tv</h1>
 			<p>The Best New Music to Amplify your Brand</p>
@@ -99,7 +206,7 @@ srcset="examples/images/medium.jpg 375w, examples/images/medium.jpg 480w, exampl
 		</div>
 
 
-		<div class="section" id="section1">
+		<div class="section" id="section1" data-brightness="light">
 			
 				<div class="intro">
 					<h1>Your Television Studio in the Cloud</h1>
@@ -113,7 +220,7 @@ srcset="examples/images/medium.jpg 375w, examples/images/medium.jpg 480w, exampl
 	</div>
 
 
-	<div class="section" id="section2">
+	<div class="section" id="section2" data-brightness="dark">
 		
 
 		<div class="intro">
@@ -127,7 +234,7 @@ srcset="examples/images/medium.jpg 375w, examples/images/medium.jpg 480w, exampl
 
 	</div>
 
-	<div class="section" id="section3">
+	<div class="section" id="section3" data-brightness="dark">
 		<div class="intro">
 
 				<h1>Music Licensing is hard;<br/>
@@ -142,7 +249,7 @@ srcset="examples/images/medium.jpg 375w, examples/images/medium.jpg 480w, exampl
 		</div>
 	</div>
 
-	<div class="section" id="section4">
+	<div class="section" id="section4" data-brightness="light">
 		<div class="intro">
 
 				<h1>Music on every screen</h1>
@@ -158,7 +265,7 @@ srcset="examples/images/medium.jpg 375w, examples/images/medium.jpg 480w, exampl
 		</div>
 	</div>
 
-	<div class="section" id="section5">
+	<div class="section" id="section5" data-brightness="light">
 		<div class="intro">
 
 				<h1>The BAMM.tv music library</h1>
@@ -177,18 +284,50 @@ srcset="examples/images/medium.jpg 375w, examples/images/medium.jpg 480w, exampl
 	</div>
 
 
-	<div class="section" id="section6">
+	<div class="section" id="section6" data-brightness="light">
 		<div class="intro">
 
 			<h1>Technology</h1>
-		
-		
 			
-	
+			<p>The BAMM.tv API powers a highly efficient workflow for delivering broadcast-quality content to any device, anywhere in the world.</p>
+			<p>Regardless of whether you are targeting a private mobile network or an out of home retail video display, BAMM.tv content is easy to integrate and fully reliable.</p>
 			
 
-		</div>
-	</div>
+		</div>  <!-- end content container -->
+	</div> <!-- end section -->
+
+	<div class="section" id="section7" data-brightness="light">
+		<h1>New Slide 1</h1>
+	</div> <!-- end section -->
+
+
+
+
+
+
+
+
+
+
+	<div class="section" id="section8" data-brightness="light">
+		<div class="intro">
+
+			<h1>New Slide 2</h1>
+			
+
+		</div>  <!-- end content container -->
+	</div> <!-- end section -->
+
+
+<div class="section" id="section9" data-brightness="light">
+		<div class="intro">
+
+			<h1>New Slide 3</h1>
+			
+
+		</div>  <!-- end content container -->
+	</div> <!-- end section -->
+
 
 <!-- Section with Horizontal Slides layout -->
 <!-- 		<div class="section" id="section????">
@@ -209,61 +348,6 @@ srcset="examples/images/medium.jpg 375w, examples/images/medium.jpg 480w, exampl
 
 
 
-<nav>
-    <ul id="navMenu">
-    <h1 id="title">MENU </h1>
- 
-      <a href="#firstSlide" id="cut"><li data-menuanchor="firstSlide" class="active"><span class="listText">Home</span>
-        <!-- CUT -->
-        <span class="svgContainers">
-
-        <img class="nav-svg svg" src="imgs/svg/home.svg" alt="nav-icon">
-     
-        </span>
-      </li></a>
-      
-
-      <a href="#fourthSlide" id="gears"><li data-menuanchor="fourthSlide"><span class="listText">Licensing</span>
-        <span class="svgContainers">
-          
-          <img class="nav-svg svg" src="imgs/svg/paper.svg" alt="nav-icon">
-          
-          </span>
-        </li></a>
-
-        <a href="#fifthSlide"><li data-menuanchor="fifthSlide">
-        <span class="listText">Distribution Platform</span>
-
-        <span class="svgContainers">
-
-        	<img class="nav-svg svg" src="imgs/svg/note.svg" alt="nav-icon">
-          
-        </span>
-
-      </li></a>
-
-
-      <a href="#sixthSlide"><li id="mobile-li" data-menuanchor="sixthSlide"><span class="listText">Music Library</span>
-
-      <span class="svgContainers">
-
-      	<img class="nav-svg svg" src="imgs/svg/cloud-1.svg" alt="nav-icon">
-        
-      </span>
-    </li></a>
-
-    
-    <a href="#seventhSlide"><li data-menuanchor="seventhSlide"><span class="listText">Technology</span>
-      <span class="svgContainers">
-      
-       <img class="nav-svg svg" src="imgs/svg/gear.svg" alt="nav-icon">
-      
-     </span></li></a>
-     <!-- Menu and Close button on mobile -->
-     <div id="nav-button">Menu</div>
- </ul>
-</nav>
-
 
 
 <!-- Smooth Scrolling -->
@@ -271,19 +355,6 @@ srcset="examples/images/medium.jpg 375w, examples/images/medium.jpg 480w, exampl
 	<!-- This script initiates the fullPage.js plugin -->
 	<script type="text/javascript" src="js/fullPageOptions.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-
-<script type="text/javascript">
-    $(function(){
-
-
-      $('#testDiv2').slimScroll({
-          height: '100px',
-          width: '300px'
-      });
-
-
-    });
-</script>
 
 
 </body>

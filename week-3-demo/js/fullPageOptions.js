@@ -4,14 +4,17 @@ $(document).ready(function(){
     var width = $( window ).width();
     var menuItems;
     var listItems = $('nav li');
-    var lightColor = "#ffffff";
-    var darkColor = "#000000";
+    var lightColor = "#ffffff !important";
+    var darkColor = "#000000 !important";
     var darkColorHover = "#ffcc00";
     var lightColorHover = "#bada55";
-    var darkBG;
     var menu = $("nav");
     var menuIsOut;
     var blackOut = $('#blackOut');
+    var navText = $('nav li a');
+    var navSVG = $('nav li path');
+//check page color for navigation{
+
 
 
 // Switch Mobile Menu
@@ -28,8 +31,30 @@ function menuDefault(){
     button.addClass('activeButton');
     menu.addClass('navOut');
     menuIsOut = false;
-    blackOut.fadeIn();
+    setTimeout(function(){
+      blackOut.fadeIn('slow');
+    },500);
+    
   }
+
+  function makeNavLight(){
+    navText.css({
+      'fill':lightColor,
+      'color':lightColor
+    });
+    navSVG.addClass('svgWhite');
+  }
+
+  function makeNavDark(){
+    navText.css({
+      'fill': darkColor,
+      'color': darkColor
+    });
+
+    navSVG.addClass('svgWhite');
+  }
+
+   
 
 
  
@@ -38,8 +63,8 @@ function menuDefault(){
         css3: true,
         navigation: false,
         resize: false,
-        anchors:['firstSlide', 'secondSlide', 'thirdSlide', 'fourthSlide', 'fifthSlide', 'sixthSlide', 'seventhSlide', 'eightSlide'],
         menu: '#navMenu',
+        anchors: ['nav-1','nav-2','nav-3','nav-4','nav-5','nav-6','nav-7','nav-8', 'nav-9','nav-10'],
         scrollOverflow: true,
         // autoScrolling: false,
         //navigationPosition: 'right',
@@ -52,73 +77,15 @@ function menuDefault(){
           darkColor = "#000000 !important";
           darkColorHover = "#bf5f00";
           lightColorHover = "#bf5f00";
-          
-          switch (index) {
-            case 1:
-            //menu.addClass('removeNav');
-            darkBG = true;
-            menuItems.css({"fill":lightColor});
-            listItems.css("color",lightColor);
-            
-            break;
-          case 2: //bright page
-          darkBG = false;
-          menuItems.css({"fill":darkColor});
-          listItems.css("color",darkColor);
-          break;
-          case 3: //dark page
-          darkBG = true;
-          menuItems.css({"fill":lightColor});
-          listItems.css("color",lightColor);
 
-          break;
-          case 4: //dark page
-          darkBG = true;
-          menuItems.css({"fill":lightColor});
-          listItems.css("color",lightColor);
-          break;
-
-        }
-        if(darkBG){
-
-          $("nav li").each(function() {
-
-            var currentSVG = $(this).find("path");
-            $(this).hover(
-              function() {
-        $(this).css({"color":lightColorHover}); // Hover State on Dark Page
-        $(currentSVG).attr({"fill":lightColorHover}); // Hover State on Dark Page
-      }, function() {
-        $(this).css({"color":lightColor}); // Normal State on Dark Page
-        $(currentSVG).attr({"fill":lightColor}); // Normal State on Dark Page
-      });
-
-          });
+          if(index == '1' || index == '3'|| index == '4'){
+                makeNavLight();
+            } else {
+              makeNavDark();
+            } 
 
 
-
-        }
-
-        if(darkBG === false){
-
-
-
-          $("nav li").each(function() {
-            var currentSVG = $(this).find("path");
-            $(this).hover(
-              function() {
-
-        $(this).css({"color":darkColorHover}); // Hover State on Dark Page
-        $(currentSVG).attr({"fill":darkColorHover}); // Hover State on Dark Page
-      }, function() {
-        $(this).css({"color":darkColor}); // Normal State on Dark Page
-        $(currentSVG).attr({"fill":darkColor}); // Normal State on Dark Page
-      });
-
-          });
-
-        }
-
+          //checkPageColor(index);
 
       }
     
@@ -130,7 +97,7 @@ function menuDefault(){
         css3: true,
         navigation: false,
         resize: false,
-        anchors:['firstSlide', 'secondSlide', 'thirdSlide', 'fourthSlide', 'fifthSlide', 'sixthSlide', 'seventhSlide', 'eightSlide'],
+        anchors: ['nav-1','nav-2','nav-3','nav-4','nav-5','nav-6','nav-7','nav-8', 'nav-9','nav-10'],
         menu: '#navMenu',
         loopHorizontal: false,
         scrollOverflow: true,
@@ -156,11 +123,11 @@ function menuDefault(){
         css3: true,
         navigation: false,
         resize: false,
-        anchors:['firstSlide', 'secondSlide', 'thirdSlide', 'fourthSlide', 'fifthSlide', 'sixthSlide', 'seventhSlide', 'eightSlide'],
+        anchors: ['nav-1','nav-2','nav-3','nav-4','nav-5','nav-6','nav-7','nav-8', 'nav-9','nav-10'],
         menu: '#navMenu',
         scrollOverflow: true,
         loopHorizontal: false,
-        // autoScrolling: false,
+        autoScrolling: true,
         // slidesNavigation: true,
         // normalScrollElements: '#testz',
         // touchSensitivity: 5,
@@ -168,6 +135,7 @@ function menuDefault(){
         afterLoad: function () {
           // window.alert('damn.');
           menuDefault();
+          $.fn.fullpage.setAllowScrolling(true);
         //   if(anchorLink === 'fourthSlide'){
         //     $.fn.fullpage.setAutoScrolling(false);
         // }
@@ -182,8 +150,12 @@ function menuDefault(){
   
     if(menuIsOut === false){
       menuDefault();
+      $.fn.fullpage.setAllowScrolling(true);
     }else{
       menuActive();
+      $.fn.fullpage.setAllowScrolling(false);
+      //$.fn.fullpage.setAutoScrolling(false);
+      //window.alert('normal scroll');
     }
 
   });
@@ -192,6 +164,7 @@ function menuDefault(){
 
 
 }); //end onLoad() function
+
 
  
 

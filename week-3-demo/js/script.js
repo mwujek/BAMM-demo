@@ -13,13 +13,13 @@ $( document ).ready(function() {
     // $( '#inner-bigGear' ).attr("fill", "#ccc");
     // $( '#inner-smallGear' ).attr("fill", "#aaa");
     $("nav").addClass("moveOut");
-    $('nav li span').css( "margin-left", "15px" );
+    //$('nav li span').css( "margin-left", "15px" );
 
   }, function() {
     // $( '#inner-bigGear').attr("fill", "#fff");
     // $( '#inner-smallGear' ).attr("fill", "#fff");
     $("nav").removeClass("moveOut");
-    $('nav li span').css( "margin-left", "55px" );
+    //$('nav li span').css( "margin-left", "55px" );
   });
   }
 
