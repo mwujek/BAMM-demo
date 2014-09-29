@@ -66,296 +66,173 @@
 
 		//https://github.com/georgepaterson/jquery-videobackground#readm
 	</script>
-	-->
+-->
 
 
 </head>
 <body>
 
 
-<!-- detection divs for devices -->
+	<!-- detection divs for devices -->
 
-<div class="detection"></div>
-<div class="detection"></div>
-<div id="ipad-detect" class="detection">ipad</div>
+	<div class="detection"></div>
+	<div class="detection"></div>
+	<div id="ipad-detect" class="detection">ipad</div>
 
-<!-- .................................... n a v i g a t i o n .................................... -->
+	<!-- .................................... n a v i g a t i o n .................................... -->
 
-<div id="nav-button">Menu</div>
-<nav>
-<!-- Menu and Close button on mobile -->
-    <ul id="navMenu">
-    <li id="title">MENU</li>
- 
-      <li data-menuanchor="nav-1" class="active"><a href="#nav-1"><span class="listText">Home</span>
-        <!-- CUT -->
-        <span class="svgContainers">
+	<div id="nav-button">Menu</div>
+	<nav>
+		<!-- Menu and Close button on mobile -->
+		<ul id="navMenu">
+			<li id="title">MENU</li>
 
-        <img class="nav-svg svg" src="imgs/svg/home.svg" alt="nav-icon">
-     
-        </span>
-      </a></li>
-      
-
-      <li data-menuanchor="nav-2"><a href="#nav-2"><span class="listText">Mission</span>
-        <span class="svgContainers">
-          
-          <img class="nav-svg svg" src="imgs/svg/cloud-1.svg" alt="nav-icon">
-          
-          </span>
-        </a></li>
-
-        <li data-menuanchor="nav-3"><a href="#nav-3">
-        <span class="listText">Licensing</span>
-
-        <span class="svgContainers">
-
-        	<img class="nav-svg svg" src="imgs/svg/note.svg" alt="nav-icon">
-          
-        </span>
-
-      </a></li>
+			<li data-menuanchor="nav-1" class="active"><a href="#nav-1">
+				<span class="svgContainers"><img class="nav-svg svg" src="imgs/svg/home.svg" alt="nav-icon"></span>
+				<span class="listText">Home</span>
+			</a></li>
 
 
-      <li data-menuanchor="nav-4"><a href="#nav-4"><span class="listText">Music Library</span>
+			<li data-menuanchor="nav-2"><a href="#nav-2">
+				<span class="svgContainers"><img class="nav-svg svg" src="imgs/svg/cloud-1.svg" alt="nav-icon"></span>
+				<span class="listText">Mission</span>
+			</a></li>
 
-      <span class="svgContainers">
-
-      	<img class="nav-svg svg" src="imgs/svg/cloud-1.svg" alt="nav-icon">
-        
-      </span>
-    </a></li>
-
-    
-    <li data-menuanchor="nav-5"><a href="#nav-5"><span class="listText">Technology</span>
-      <span class="svgContainers">
-      
-       <img class="nav-svg svg" src="imgs/svg/gear.svg" alt="nav-icon">
-      
-     </span></a></li>
-
-      <li data-menuanchor="nav-6"><a href="#nav-6"><span class="listText">New Slide 1</span>
-        <!-- CUT -->
-        <span class="svgContainers">
-
-        <img class="nav-svg svg" src="imgs/svg/home.svg" alt="nav-icon">
-     
-        </span>
-      </a></li>
-      
-
-        <li data-menuanchor="nav-7"><a href="#nav-7">
-        <span class="listText">New Slide 2</span>
-
-        <span class="svgContainers">
-
-        	<img class="nav-svg svg" src="imgs/svg/note.svg" alt="nav-icon">
-          
-        </span>
-
-      </a></li>
+			<li data-menuanchor="nav-3"><a href="#nav-3">
+				<span class="svgContainers"><img class="nav-svg svg" src="imgs/svg/note.svg" alt="nav-icon"></span>
+				<span class="listText">Licensing</span>
+			</a></li>
 
 
-      <li data-menuanchor="nav-8"><a href="#nav-8"><span class="listText">New Slide 3</span>
-
-      <span class="svgContainers">
-
-      	<img class="nav-svg svg" src="imgs/svg/cloud-1.svg" alt="nav-icon">
-        
-      </span>
-    </a></li>
-
-    <li data-menuanchor="nav-9"><a href="#nav-9">
-        <span class="listText">New Slide 4</span>
-
-        <span class="svgContainers">
-
-        	<img class="nav-svg svg" src="imgs/svg/note.svg" alt="nav-icon">
-          
-        </span>
-
-      </a></li>
+			<li data-menuanchor="nav-4"><a href="#nav-4">
+				<span class="svgContainers"><img class="nav-svg svg" src="imgs/svg/cloud-1.svg" alt="nav-icon"></span>
+				<span class="listText">Music Library</span>
+			</a></li>
 
 
-      <li data-menuanchor="nav-10"><a href="#nav-10"><span class="listText">New Slide 5</span>
+			<li data-menuanchor="nav-5"><a href="#nav-5">
+				<span class="svgContainers"><img class="nav-svg svg" src="imgs/svg/gear.svg" alt="nav-icon"></span>
+				<span class="listText">Technology</span>	
+			</a></li>
 
-      <span class="svgContainers">
+			<li data-menuanchor="nav-6"><a href="#nav-6">
+				<span class="svgContainers"><img class="nav-svg svg" src="imgs/svg/home.svg" alt="nav-icon"></span>
+				<span class="listText">New Slide 1</span>
+				<!-- CUT -->		
+			</a></li>
 
-      	<img class="nav-svg svg" src="imgs/svg/cloud-1.svg" alt="nav-icon">
-        
-      </span>
-    </a></li>
- </ul>
-</nav>
+
+			<li data-menuanchor="nav-7"><a href="#nav-7">
+				<span class="svgContainers"><img class="nav-svg svg" src="imgs/svg/note.svg" alt="nav-icon"></span>
+				<span class="listText">New Slide 2</span>
+			</a></li>
+
+
+			<li data-menuanchor="nav-8"><a href="#nav-8">
+				<span class="svgContainers"><img class="nav-svg svg" src="imgs/svg/cloud-1.svg" alt="nav-icon"></span>
+				<span class="listText">New Slide 3</span>
+			</a></li>
+
+			<li data-menuanchor="nav-9"><a href="#nav-9">
+				<span class="svgContainers"><img class="nav-svg svg" src="imgs/svg/note.svg" alt="nav-icon"></span>
+				<span class="listText">New Slide 4</span>
+			</a></li>
+
+
+			<li data-menuanchor="nav-10"><a href="#nav-10">
+				<span class="svgContainers"><img class="nav-svg svg" src="imgs/svg/cloud-1.svg" alt="nav-icon"></span>
+				<span class="listText">New Slide 5</span>
+			</a></li>
+		</ul>
+	</nav>
 
 
 
-<div id="blackOut"></div>
+	<div id="blackOut"></div>
 
 	<div id="fullpage">
 
 		<div class="section" id="section0" data-brightness="dark">
-		<span id="videoContainer"></span>
+			<span id="videoContainer"></span>
 			<h1>BAMM.tv</h1>
 			<p>The Best New Music to Amplify your Brand</p>
-			
-			<!-- Picture Fill Demo -->
-			<!--<img sizes="(min-width: 40em) 80vw, 100vw"
-srcset="examples/images/medium.jpg 375w, examples/images/medium.jpg 480w, examples/images/large.jpg 768w" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">-->
+
 			
 		</div>
 
 
 		<div class="section" id="section1" data-brightness="light">
-			
-				<div class="intro">
-					<h1>Your Television Studio in the Cloud</h1>
-					<p>Everybody loves music - but the thought of licensing it for your platform may evoke emotions of fear and loathing rather than enjoyment.</p>
-					<p>BAMM.tv exists to change the way companies think about music licensing by offering affordable music solutions that connect deeply with your customers and provide exciting, relevant content tailored to their interests.</p>
+			<section class="section-content">
+				<h1>Your Television Studio in the Cloud</h1>
+				<p>Everybody loves music - but the thought of licensing it for your platform may evoke emotions of fear and loathing rather than enjoyment.</p>
+				<p>BAMM.tv exists to change the way companies think about music licensing by offering affordable music solutions that connect deeply with your customers and provide exciting, relevant content tailored to their interests.</p>
 
-					<p><em>Think of us as your customized television studio in the cloud.</em></p>
-				<a href="#thirdSlide"><div class="next-button"></div></a>
-			</div>
-		
-	</div>
+				<p><em>Think of us as your customized television studio in the cloud.</em></p>
+
+			</section> <!-- end of content -->
+		</div> <!-- end of slide section -->
 
 
-	<div class="section" id="section2" data-brightness="dark">
-		
+		<div class="section" id="section2" data-brightness="dark">
+			<section class="section-content">
+				<div class="slide">
+					<h1>Music Licensing is Hard; BAMM.tv makes it easy</h1>
+					<p>In a digital world, users expect to be able to access their content on any device. BAMM.tv makes the multi-screen experience a plug-and-play feature for your business. A single content license extends global rights to all your territories and guarantees that customers will be able to access content from web, mobile, tablet and television at no additional cost.</p>
+					<div class="moveRightLabel">Scroll to the Right to learn more</div>
+					</div> <!-- end of single slide -->
 
-		<div class="intro">
-		
-			<h1>New Challenges</h1>
-			<h1>New Opportunities</h1>
-			<p>Get it right the first time.</p>
-			<a href="#fourthSlide"><div class="next-button"></div></a>
-			
-			</div>
+					<div class="slide" id="slide2"> Slide 2
 
-	</div>
+					</div> <!-- end of single slide -->
 
-	<div class="section" id="section3" data-brightness="dark">
-		<div class="intro">
+					<div class="slide"> Slide 3
 
-				<h1>Music Licensing is hard;<br/>
-				BAMM.tv makes it easy.</h1>
-			
-			<p>Bearing the weight of legal compliance and contractual restrictions is a difficult task.</p>
-			<hr class="short-hr">
-			<p>At best, licensing music from mainstream sources is a costly and time consuming process, and at the end of the line there is little in any one library to differentiate you from your competitors. Or YouTube.</p>
-			<hr class="short-hr">
-			<p>BAMM.tv helps partners move the “music” category from a cost driver to a profit center with innovative strategies that deliver localized, customized, exclusive content for your customers. From first concept to final execution, we seamlessly integrate our deliverables to amplify your existing marketing and business development efforts.</p>
-			
-		</div>
-	</div>
+					</div> <!-- end of single slide -->
 
-	<div class="section" id="section4" data-brightness="light">
-		<div class="intro">
+					<div class="slide" id="slide4"> Slide 4
 
-				<h1>Music on every screen</h1>
-			
-			<p>In a digital world, users expect to be able to access their content on any device. BAMM.tv makes the multi-screen experience a plug-and-play feature for your business.</p>
-			<hr class="short-hr">
-			<p>A single content license extends global rights to all your territories and guarantees that customers will be able to access content from web, mobile, tablet and television at no additional cost.</p>
-			<hr class="short-hr">
-			<p>BAMM.tv’s powerful backend and API allows for seamless integration into your existing properties, or we can develop custom mobile, tablet and IPTV apps for your business.</p>
-			<hr class="short-hr">
-			<p>Whatever your needs, BAMM.tv provides the infrastructure and technology for mass distribution across wide networks of carriers and platforms.</p>
-
-		</div>
-	</div>
-
-	<div class="section" id="section5" data-brightness="light">
-		<div class="intro">
-
-				<h1>The BAMM.tv music library</h1>
-			
-			<p>BAMM.tv owns the exclusive, global distribution rights to thousands of broadcast-quality videos of live performances by breaking artists from music hubs around the world. </p>
-			<hr class="short-hr">
-			<p>We have a strong track record of working with artists on their way to achieving mainstream success.</p>
-			<hr class="short-hr">
-			<p>These musicians are winning Grammy’s, headlining festivals, signing to major labels and featuring in popular films. And their careers are still on the rise. <a href="#">Click here</a> to learn more.</p>
-			<hr class="short-hr">
-			<p>In addition to licensing our existing library, BAMM.tv creates new content on location in the territories that matter most to your business, highlighting the best local talent and distributing exciting new music to the global stage.</p>
-
-			<a class="link-button" href="#">More Info</a>
-
-		</div>
-	</div>
+					</div> <!-- end of single slide -->
 
 
-	<div class="section" id="section6" data-brightness="light">
-		<div class="intro">
+				</section> <!-- end of content -->
 
-			<h1>Technology</h1>
-			
-			<p>The BAMM.tv API powers a highly efficient workflow for delivering broadcast-quality content to any device, anywhere in the world.</p>
-			<p>Regardless of whether you are targeting a private mobile network or an out of home retail video display, BAMM.tv content is easy to integrate and fully reliable.</p>
-			
+				<div class="bottom-slide-nav" id="bottomNav-First">
+					<h1>Return</h1>
+				</div> <!-- end of bottom slide nav -->
+			</div> <!-- end of slide section -->
 
-		</div>  <!-- end content container -->
-	</div> <!-- end section -->
+			<div class="section" id="section3" data-brightness="dark">
+				<section class="section-content">
+					<h1>Music on Every Screen</h1>
+					<p>This is the technology section.</p>
 
-	<div class="section" id="section7" data-brightness="light">
-		<h1>New Slide 1</h1>
-	</div> <!-- end section -->
+				</section> <!-- end of content -->
+			</div> <!-- end of slide section -->
+
+			<div class="section" id="section4" data-brightness="dark">
+				<section class="section-content">
+					<h1>The BAMM.tv music library</h1>
+					<p>Music Library Section.</p>
+				</section> <!-- end of content -->
+			</div> <!-- end of slide section -->
 
 
 
 
 
+		</div> <!-- end of Fullpage.js div container -->
 
 
 
 
 
-	<div class="section" id="section8" data-brightness="light">
-		<div class="intro">
+		<!-- Smooth Scrolling -->
 
-			<h1>New Slide 2</h1>
-			
-
-		</div>  <!-- end content container -->
-	</div> <!-- end section -->
+		<!-- This script initiates the fullPage.js plugin -->
+		<script type="text/javascript" src="js/fullPageOptions.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<!--<script type="text/javascript" src="js/book.js" async></script>  chapters and pages -->
 
 
-<div class="section" id="section9" data-brightness="light">
-		<div class="intro">
-
-			<h1>New Slide 3</h1>
-			
-
-		</div>  <!-- end content container -->
-	</div> <!-- end section -->
-
-
-<!-- Section with Horizontal Slides layout -->
-<!-- 		<div class="section" id="section????">
-		<div class="intro">
-			
-				<div class="slide" style="background:#111"> <h1>Horizontal Slides</h1> </div>
-			    <div class="slide" style="background:#555"> Slide 2 </div>
-			    <div class="slide" style="background:#999"> Slide 3 </div>
-			    <div class="slide" style="background:#aaa"> Slide 4 </div>
-			
-		</div>
-	</div> -->
-
-
-
-
-</div> <!-- end of Fullpage.js div container -->
-
-
-
-
-
-<!-- Smooth Scrolling -->
-
-	<!-- This script initiates the fullPage.js plugin -->
-	<script type="text/javascript" src="js/fullPageOptions.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-
-
-</body>
-</html>
+	</body>
+	</html>

@@ -1,6 +1,10 @@
 $nav-desktop-color: #333;
 $desktop-p-font-size:1em;
 $content-width:650px;
+$font-color:#3B536B;
+
+//chapter and page values
+$move-right-label-color: #fff;
 
 html{
 	font-size:68.75%;
@@ -12,6 +16,12 @@ body{
 	font-size:1rem; /*IE9 & 10*/
 	line-height:1.625; /*IE9 & 10*/
 	font:1rem/1.625 sans-serif;
+}
+
+.section p{
+	font-size: 2.2rem;
+	font-size: 0.2em;
+	font-size:80%;
 }
 
 h1{
@@ -27,9 +37,9 @@ h3{
 /*styles for layout and flourished e.g. <hr>, buttons, etc.*/
 hr{
 	background-color: #333;
-    border: 0 none;
-    color: #333;
-    height: 1px;
+	border: 0 none;
+	color: #333;
+	height: 1px;
 }
 .short-hr{
 	width: 20%;
@@ -48,7 +58,7 @@ hr{
 	/*text-decoration: none;*/
 	margin-top:15px !important;
 	display: block;
-	width: 60px;
+	width: 100px;
 	transition: all 0.3s;
 	margin: 0 auto;
 	text-align: center;
@@ -90,6 +100,12 @@ hr{
 	background: #fff;
 
 }
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+// navigation
 
 nav a{
 	text-decoration: none;
@@ -114,7 +130,8 @@ nav li path{
 	width:100%;
 	height:50px;
 	line-height: 50px;
-	font-family: "refrigerator-deluxe",sans-serif;
+	font-family: "museo-sans-rounded",sans-serif;
+	font-weight: 700;
 	color:#fff;
 	font-size: 2rem;
 	letter-spacing: 3px;
@@ -131,7 +148,7 @@ nav{
 	margin: 0;
 	left:-230px;
 	transition:all 0.5s;
-	text-align: center;
+	text-align: left;
 	top:0;
 	background:rgba(20,20,20,0.75);;
 	height:100%;
@@ -143,7 +160,7 @@ nav{
 nav ul{
 	height: 100%;
 	overflow:scroll;
-  	overflow-x:hidden; 
+	overflow-x:hidden; 
 }
 
 #menu-svg{
@@ -186,8 +203,6 @@ nav ul{
 }
 
 
-
-
 nav li, nav ul{
 	text-indent: 0;
 	list-style: none;
@@ -220,15 +235,65 @@ nav li, path, #heart, #inner-bigGear, #inner-smallGear, .cut-icon{
 	transition:0.3s all;
 }
 
+
+//this is the text for each of the li elements
 .listText{
 	display: inline-block;
 	position: relative;
 	top:4px;
 	font-size:1.3rem;
 	transition:0.3s all;
+	margin-left: 10px;
+}
 
+// finish nav css
+
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+// slide styles (styles for chapters and pages)
+
+.moveRightLabel{
+	text-align: center;
+	color:$move-right-label-color;
+	text-transform: uppercase;
 
 }
+
+#slide2 .fp-tableCell, #slide4 .fp-tableCell{
+	background:white !important;
+	color:$font-color;
+}
+
+#slide2, #slide4{
+	background: white;
+}
+
+//hide the navigation (left and right) arrows on all slides
+.fp-controlArrow{
+	display: none;
+}
+
+.bottom-slide-nav{
+	position: absolute;
+	bottom: 0px;
+	left:0px;
+	background:red;
+	height:50px;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
+
 
 .section{
 	transition:1.0s all;
@@ -242,34 +307,38 @@ nav li, path, #heart, #inner-bigGear, #inner-smallGear, .cut-icon{
 
 
 .section h1{
-	font-family: "refrigerator-deluxe",sans-serif;
-	font-size:2.375rem;
+	//font-family: "refrigerator-deluxe",sans-serif;
+	font-family: "brandon-grotesque",sans-serif;
+	font-size:2rem;
 	line-height: 2.8rem;
 	text-align: center;
+	text-transform: uppercase;
 
 }
 
 /*Page Specific <h1> and <p> (different slides require smaller or larger font-size)*/
 #section0 h1{
-font-family: "refrigerator-deluxe",sans-serif;
+	font-family: "refrigerator-deluxe",sans-serif;
 	font-size: 6.5rem;
 	margin-bottom: 30px;
 }
 
 #section0 p{
 	font-size: 2.2rem;
-	line-height: 2.6rem;
+	line-height: 2.2rem;
+	margin-top: -5px;
 }
 
-#section3 h1{
-	font-size: 3.2rem;
-	line-height: 3.6rem;
-}
+// #section3 h1{
+// 	font-size: 3.2rem;
+// 	line-height: 3.6rem;
+// }
 
 
 .section p{
 	font-family: 'chaparral-pro';
 }
+
 .slide{
 	width:100%;
 	text-align: center;
@@ -359,10 +428,10 @@ font-family: "refrigerator-deluxe",sans-serif;
 	color:#fff;
 }
 
-#section2 h1{
-	line-height: 1.8rem;
-	font-size: 4rem;
-}
+// #section2 h1{
+// 	line-height: rem;
+// 	font-size: 4rem;
+// }
 
 #section2 p{
 	font-size: 1.8rem;
@@ -395,42 +464,195 @@ font-family: "refrigerator-deluxe",sans-serif;
 -----------------------////////---------------------////////
 -----------------------////////---------------------////////
 -----------------------////////---------------------////////*/
-/*BEGIN TABLET OR LARGER*/
-@media (min-width:40rem){
+
+@media only screen and (max-device-width: 600px) and (orientation:landscape) {
+  /* MOBILE————For landscape layouts only */
 
 	html{
-		font-size:81.25%;
+		font-size:40.25%;
 	} 
 
+	#section0 p{
+	margin-top: -20px;
+}
+
+.section-content p{
+	max-width: 75%;
+	margin: 0 auto;
+	font-size: 0.5em;
+}
+
+
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+//start navigation
+
+  #nav-button{
+  	width:30px;
+  	height:25px;
+  	line-height:25px;
+  	border-radius: 0px;
+  	position:fixed;
+  	top:0px;
+  	left:0px;
+	font-size:8px;
+	background: rgba(0,0,0,0.4);
+}
+
+
+nav a{
+	text-decoration: none;
+	color:white;
+	/*color:orange;*/
+}
+
+nav a:visited{
+	color:white;
+}
+
+nav li path{
+	fill:#ffffff;
+	transition:0.3s;
+}
+
+#title{
+
+	height:30px;
+	line-height: 30px;
+	
+}
+nav{
+	list-style: none;
+	/*outline: red 1px dashed;*/
+	position: fixed;
+	z-index: 100;
+	width: 120px;
+	padding:0;
+	margin: 0;
+	left:-230px;
+	transition:all 0.5s;
+	text-align: left;
+	top:0;
+	background:rgba(20,20,20,0.75);;
+	height:100%;
+	font-family: 'museo-sans-rounded',sans-serif;
+	border-right: 2px solid #555;
+	/*outline: yellow 1px solid;*/
+}
+
+nav ul{
+	height: 100%;
+	overflow:scroll;
+	overflow-x:hidden; 
+}
+
+
+
+.navOut{
+	left:0px;
+}
+
+.activeButton{
+	border:#ff4136 1px solid !important;
+	color:#fff !important;
+	background:#ff4136 !important;
+	width:35px !important;
+  	height:35px !important;
+  	line-height:35px !important;
+  	border-radius: 35px !important;
+	left:130px !important;
+	top:10px !important;
+	
+	/* right:-60px !important; */
+}
+
+
+nav li, nav ul{
+	text-indent: 0;
+	list-style: none;
+	padding:0;
+	margin: 0;
+}
+nav li{
+	margin: 0px auto;
+	text-transform: uppercase;
+	font-weight: 400;
+	border-bottom: 1px #333 solid;
+	display: block;
+}
+
+nav li .svgContainers{
+	/*outline: 1px black solid;*/
+	display: inline-block;
+	transition:0.5s all;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	position: relative;
+	top:3px;
+}
+
+#menu-svg{
+	height:18px;
+	width: 18px;
+}
+
+nav svg{
+	vertical-align:middle;
+	width:15px;
+	height:15px;
+	/*outline: red 1px solid;*/
+}
+nav li, path, #heart, #inner-bigGear, #inner-smallGear, .cut-icon{
+	transition:0.3s all;
+}
+
+.listText{
+	display: inline-block;
+	position: relative;
+	top:4px;
+	font-size:0.2rem;
+	transition:0.3s all;
+}
+
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+//end navigation
+
 
 
 }
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-  /* For portrait layouts only */
 
-  html{
-		font-size:81.25%;
-	}
 
-	#ipad-detect, .detection{
-		display: inline-block;
-	}
-}
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-  /* For landscape layouts only */
 
-  html{
-		font-size:81.25%;
-	} 
 
-	#ipad-detect, .detection{
-		display: inline-block;
-	}
-}
 
-@media (min-width:37.5em){    :root{ font-size:93.75% } }
-@media (min-width:50em){      :root{ font-size:112.5% } }
+
+
+// @media only screen and (min-device-width: 501px) and (max-device-width: 1024px) and (orientation:portrait) {
+//   /* TABLETS————For portrait layouts only */
+
+//   html{
+//   	font-size:81.25%;
+//   }
+
+//   #ipad-detect, .detection{
+//   	display: inline-block;
+//   }
+// }
+
+// 
+
+// @media (min-width:37.5em){    :root{ font-size:93.75% } }
+// @media (min-width:50em){      :root{ font-size:112.5% } }
 @media (min-width:62.4375em){ :root{ font-size:118.75% } 
 
 #media-test{
@@ -578,11 +800,7 @@ nav li .svgContainers{
 	background-image: url(../imgs/header1.jpg);
 }
 
-#section2 h1{
-	font-family: "refrigerator-deluxe",sans-serif;
-	color:#fff;
-	margin: -20px auto;
-}
+
 #section2 p{
 	margin: 40px auto;
 }
