@@ -6,6 +6,10 @@ $font-color:#3B536B;
 //chapter and page values
 $move-right-label-color: #fff;
 
+$body-text: 'ff-tisa-sans-web-pro';
+$heading-font: 'refrigerator-deluxe';
+$subheading-font: 'effra';
+
 html{
 	font-size:68.75%;
 	height:100%;
@@ -16,8 +20,13 @@ body{
 	font-size:1rem; /*IE9 & 10*/
 	line-height:1.625; /*IE9 & 10*/
 	font:1rem/1.625 sans-serif;
+	font-family: $body-text;
 }
 
+.effra{
+	font-family: $subheading-font !important;
+	font-weight: 100;
+}
 .section p{
 	font-size: 2.2rem;
 	font-size: 0.2em;
@@ -62,7 +71,7 @@ hr{
 	transition: all 0.3s;
 	margin: 0 auto;
 	text-align: center;
-	font-family: 'chaparral-pro';
+	font-family: $body-text;
 
 }
 
@@ -130,7 +139,7 @@ nav li path{
 	width:100%;
 	height:50px;
 	line-height: 50px;
-	font-family: "museo-sans-rounded",sans-serif;
+	font-family: $heading-font ,sans-serif;
 	font-weight: 700;
 	color:#fff;
 	font-size: 2rem;
@@ -152,7 +161,7 @@ nav{
 	top:0;
 	background:rgba(20,20,20,0.75);;
 	height:100%;
-	font-family: 'museo-sans-rounded',sans-serif;
+	font-family: $subheading-font,sans-serif;
 	border-right: 2px solid #555;
 	/*outline: yellow 1px solid;*/
 }
@@ -173,17 +182,17 @@ nav ul{
 	position:fixed;
 	top:10px;
 	left:10px;
-	font-family: "museo-sans-rounded",sans-serif;
+	font-family: $subheading-font,sans-serif;
 	/* background:#ddd; */
 	text-align:center;
 	line-height:40px;
-	transition:all 0.3s;
+	transition:all 0.5s;
 	text-decoration:underline;
 	color:white;
-	border-radius:30px;
+	border-radius: 5px;
 	font-size:16px;
 	background: rgba(0,0,0,0.2);
-	z-index: 200;
+	z-index: 100;
 }
 
 
@@ -197,8 +206,9 @@ nav ul{
 	background:#ff4136 !important;
 	width:70px !important;
 	height:50px !important;
-	left:240px !important;
+	left:231px !important;
 	line-height:50px !important;
+	border-radius: 0px 20px 20px 0px !important;
 	/* right:-60px !important; */
 }
 
@@ -308,7 +318,7 @@ nav li, path, #heart, #inner-bigGear, #inner-smallGear, .cut-icon{
 
 .section h1{
 	//font-family: "refrigerator-deluxe",sans-serif;
-	font-family: "brandon-grotesque",sans-serif;
+	font-family: $heading-font;
 	font-size:2rem;
 	line-height: 2.8rem;
 	text-align: center;
@@ -318,7 +328,7 @@ nav li, path, #heart, #inner-bigGear, #inner-smallGear, .cut-icon{
 
 /*Page Specific <h1> and <p> (different slides require smaller or larger font-size)*/
 #section0 h1{
-	font-family: "refrigerator-deluxe",sans-serif;
+	font-family: $heading-font;
 	font-size: 6.5rem;
 	margin-bottom: 30px;
 }
@@ -336,7 +346,7 @@ nav li, path, #heart, #inner-bigGear, #inner-smallGear, .cut-icon{
 
 
 .section p{
-	font-family: 'chaparral-pro';
+	font-family: $body-text;
 }
 
 .slide{
@@ -760,12 +770,12 @@ nav li .svgContainers{
 #section0 h1{
 	font-size: 15em;
 	margin: 0 auto;
-	font-family: "refrigerator-deluxe",sans-serif;
+	font-family: $heading-font;
 	color:#fff;
 }
 
 #section0 p, #section2 p{
-	font-family: "chaparral-pro",serif;
+	font-family: $body-text,serif;
 	font-style: italic;
 	font-weight: 500;
 	margin: -20px auto;
@@ -784,13 +794,13 @@ nav li .svgContainers{
 	background-color: white;
 }
 #section1 h1{
-	font-family: "refrigerator-deluxe",sans-serif;
+	font-family: $heading-font;
 	font-size:2em;
 	color:#555;
 }
 
 #section1 p{
-	font-family: "chaparral-pro",serif;
+	font-family: $body-text;
 	margin: 20px auto;
 
 }
@@ -862,7 +872,7 @@ nav li path{
 }
 
 #section3 h1{
-	font-family: "brandon-grotesque",sans-serif;
+	font-family: $heading-font,sans-serif;
 	color:#fff;
 	margin: 0 auto;
 }
@@ -872,7 +882,7 @@ nav li path{
 }
 
 #section3 p{
-	font-family: "chaparral-pro", serif;
+	font-family: $body-text, serif;
 	font-weight: 100;
 	letter-spacing: 1px;
 	color:#fff;
